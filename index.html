@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <header>Minha Lista de Tarefas</header>
+    <title>Project TodoList</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+    <main>
+        <section class="teste">
+            <header>
+                <h1>Minha Lista de Tarefas</h1>
+            </header>
+            
+            <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+            <input id="texto-tarefa" type="text" placeholder="Digite sua tarefa">
+            <button id="criar-tarefa">Criar Tarefa</button>
+            <ol id="lista-tarefas"></ol>
 
-<input id="texto-tarefa" type="text" placeholder="Digite sua tarefa">
+            <button id="mover-cima">up</button>
+            <button id="mover-baixo">down</button>
 
-<ol id="lista-tarefas"></ol>
 
-<button id="criar-tarefa">Criar Tarefa</button>
-<script src="script.js"></script>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
 </body>
-</html>
 
+</html>
