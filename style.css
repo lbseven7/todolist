@@ -4,7 +4,43 @@ body {
 
 header h1 {
   color: rgb(5, 5, 5);
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 0;
+}
+#apaga-tudo {
+  border: none;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(250, 22, 6);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+}
+
+#salvar-tarefas {
+  border: none;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(35, 172, 16);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+}
+
+#remover-finalizados {
+  border: none;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(14, 157, 182);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+}
+
+#funcionamento {
+  color: gray;
+  font-style: italic;
+  margin-top: 0;
 }
 
 /* Button que adiciona nova tarefa */
@@ -12,8 +48,9 @@ header h1 {
   border: none;
   color: white;
   border-radius: 10px;
-  background-color: rgb(14, 134, 182);
+  background-color: rgb(18, 194, 179);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
 }
 
 /* Meu input */
@@ -26,23 +63,33 @@ header h1 {
   padding: 30px;
   height: auto;
   width: 500px;
-  background-color: rgb(212, 255, 223);
+  background-color: white;
   margin: auto;
   border-radius: 15px;
   margin-top: 50px;
 }
 
 #mover-cima {
-  background: rgb(245, 84, 9);
   border: none;
-  border-radius: 10px;
+  border: none;
   color: white;
+  border-radius: 10px;
+  background-color: rgb(250, 136, 6);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
 }
 
 #mover-baixo {
-  background: rgb(245, 84, 9);
   border: none;
-  border-radius: 10px;
+  border: none;
   color: white;
-}
+  border-radius: 10px;
+  background-color: rgb(250, 136, 6);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+
+
+
+
+
 
