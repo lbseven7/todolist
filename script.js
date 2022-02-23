@@ -5,3 +5,7 @@ const btnCreateTarefa = document.querySelector('#criar-tarefa');
 const btnClear = document.getElementById('apaga-tudo');
 const btnRemoveMark = document.getElementById('remover-finalizados');
 
+// Adicionando eventos nos botões
+btnCreateTarefa.addEventListener('click', creatList);
+btnClear.addEventListener('click', clearList);
+btnRemoveMark.addEventListener('click', removeMark);
