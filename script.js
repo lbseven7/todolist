@@ -24,3 +24,17 @@ olElement.addEventListener('click', (event) => {
 
   }
 })
+
+// Adiciona evento de duplo click na ol; Verifica se contém, remove se tiver e adiciona se não tiver a classe completed
+olElement.addEventListener('dblclick', (event) => {
+  if (event.target.id !== 'lista-tarefas') { // diferente do id do pai
+    if (event.target.classList.contains('completed')) {
+      event.target.classList.remove('completed');
+
+    } else {
+      event.target.classList.add('completed');
+    }
+
+  }
+
+})
