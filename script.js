@@ -9,3 +9,18 @@ const btnRemoveMark = document.getElementById('remover-finalizados');
 btnCreateTarefa.addEventListener('click', creatList);
 btnClear.addEventListener('click', clearList);
 btnRemoveMark.addEventListener('click', removeMark);
+
+
+// Elemento da lista recebe background cinza quando clicado/selecionado
+olElement.addEventListener('click', (event) => {
+  console.log(event);
+  if (event.target.id !== 'lista-tarefas') {
+    for (let i = 0; i < olElement.children.length; i += 1) {
+      if (olElement.children[i].style.backgroundColor === 'rgb(128, 128, 128)') {
+        olElement.children[i].style.backgroundColor = '';
+      }
+    }
+    event.target.style.backgroundColor = 'rgb(128, 128, 128)';
+
+  }
+})
