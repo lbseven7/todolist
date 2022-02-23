@@ -38,3 +38,13 @@ olElement.addEventListener('dblclick', (event) => {
   }
 
 })
+
+// Cria elemento li e armazena o valor do input
+function creatList() {
+  const newLi = document.createElement('li');
+
+  newLi.innerText = inputElement.value;
+  olElement.appendChild(newLi)
+  inputElement.value = '';
+
+}
