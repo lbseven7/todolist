@@ -46,5 +46,13 @@ function creatList() {
   newLi.innerText = inputElement.value;
   olElement.appendChild(newLi)
   inputElement.value = '';
+}
 
+// Requisito 10 - Botão apagar
+function clearList() {
+  //olElement.innerHTML = '';
+  for (let i = olElement.children.length - 1; i >= 0; i -= 1) {
+    let clear = olElement.children[i];
+    olElement.removeChild(clear);
+  }
 }
