@@ -56,3 +56,15 @@ function clearList() {
     olElement.removeChild(clear);
   }
 }
+
+// Remove os itens marcados da lista
+function removeMark() {
+
+  for (let index = olElement.children.length - 1; index >= 0; index -= 1) {
+    if (olElement.children[index].className === 'completed') {
+      olElement.removeChild(olElement.children[index]);
+    }
+  }
+}
+
+
