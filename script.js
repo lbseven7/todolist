@@ -72,6 +72,7 @@ function removeMark() {
 //   const removeSelected = document.querySelectorAll('.selected');
 // }
 
+// Slava no localStorage
 btnSaveList.addEventListener('click', saveList);
 
 function saveList() {
@@ -84,6 +85,7 @@ function getItem() {
   olElement.innerHTML = saveItem;
 }
 
+// Ao caregar a página
 window.onload = () => {
   getItem();
 };
