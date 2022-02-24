@@ -58,6 +58,10 @@ header h1 {
   border: 1px solid blue;
 }
 
+.completed {
+  text-decoration: line-through;
+}
+
 .teste {
   margin: 30px;
   padding: 30px;

@@ -30,13 +30,10 @@ olElement.addEventListener('dblclick', (event) => {
   if (event.target.id !== 'lista-tarefas') { // diferente do id do pai
     if (event.target.classList.contains('completed')) {
       event.target.classList.remove('completed');
-
     } else {
       event.target.classList.add('completed');
     }
-
   }
-
 })
 
 // Cria elemento li e armazena o valor do input
@@ -59,12 +56,13 @@ function clearList() {
 
 // Remove os itens marcados da lista
 function removeMark() {
-
   for (let index = olElement.children.length - 1; index >= 0; index -= 1) {
     if (olElement.children[index].className === 'completed') {
       olElement.removeChild(olElement.children[index]);
     }
   }
+  
 }
+
 
 
