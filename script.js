@@ -4,6 +4,7 @@ const olElement = document.querySelector('#lista-tarefas');
 const btnCreateTarefa = document.querySelector('#criar-tarefa');
 const btnClear = document.getElementById('apaga-tudo');
 const btnRemoveMark = document.getElementById('remover-finalizados');
+const btnSaveList = document.querySelector('#salvar-tarefas');
 
 // Adicionando eventos nos botões
 btnCreateTarefa.addEventListener('click', creatList);
@@ -61,8 +62,29 @@ function removeMark() {
       olElement.removeChild(olElement.children[index]);
     }
   }
-  
+
 }
 
+// Remove selecionado
+// btnRemoveSelected.addEventListener('click', removeSelected);
 
+// function removeSelected() {
+//   const removeSelected = document.querySelectorAll('.selected');
+// }
+
+btnSaveList.addEventListener('click', saveList);
+
+function saveList() {
+  localStorage.setItem('lista', olElement.innerHTML);
+}
+
+// PEGA lista no local Storage
+function getItem() {
+  const saveItem = localStorage.getItem('lista');
+  olElement.innerHTML = saveItem;
+}
+
+window.onload = () => {
+  getItem();
+};
 
