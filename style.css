@@ -1,39 +1,41 @@
 body {
+/* stylelint-disable-next-line function-comma-space-before */
   background-color: rgb(48, 202, 74);
 }
 
 header h1 {
-  color: rgb(5, 5, 5);
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 0;
 }
+
+.completed {
+  text-decoration: line-through black;
+}
+
 #apaga-tudo {
-  border: none;
   border: none;
   color: white;
   border-radius: 10px;
   background-color: rgb(250, 22, 6);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 5px;
 }
 
 #salvar-tarefas {
   border: none;
-  border: none;
   color: white;
   border-radius: 10px;
   background-color: rgb(35, 172, 16);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 5px;
 }
 
 #remover-finalizados {
   border: none;
-  border: none;
   color: white;
   border-radius: 10px;
   background-color: rgb(14, 157, 182);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 5px;
 }
 
@@ -49,17 +51,13 @@ header h1 {
   color: white;
   border-radius: 10px;
   background-color: rgb(18, 194, 179);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 5px;
 }
 
 /* Meu input */
 #texto-tarefa {
   border: 1px solid blue;
-}
-
-.completed {
-  text-decoration: line-through;
 }
 
 .teste {
@@ -75,20 +73,19 @@ header h1 {
 
 #mover-cima {
   border: none;
-  border: none;
   color: white;
   border-radius: 10px;
   background-color: rgb(250, 136, 6);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   padding: 5px;
 }
 
 #mover-baixo {
   border: none;
-  border: none;
   color: white;
   border-radius: 10px;
+  /* stylelint-disable-next-line function-comma-space-before */
   background-color: rgb(250, 136, 6);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 5px;
 }

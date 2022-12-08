@@ -55,7 +55,7 @@ function clearList() {
   }
 }
 
-// Remove os itens marcados da lista
+// Remove os itens marcados/finalizado da lista
 function removeMark() {
   for (let index = olElement.children.length - 1; index >= 0; index -= 1) {
     if (olElement.children[index].className === 'completed') {
@@ -72,7 +72,7 @@ function removeMark() {
 //   const removeSelected = document.querySelectorAll('.selected');
 // }
 
-// Slava no localStorage
+// Salva no localStorage
 btnSaveList.addEventListener('click', saveList);
 
 function saveList() {
